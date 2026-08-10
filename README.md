@@ -1,8 +1,8 @@
 # Shortcut Sensei
 
-[![Stars](https://img.shields.io/github/stars/AnandShah10/shortcut-sensei?style=social)](https://github.com/AnandShah10/shortcut-sensei/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/AnandShah10/shortcut-sensei)](https://github.com/AnandShah10/shortcut-sensei/issues)
-[![License](https://img.shields.io/github/license/AnandShah10/shortcut-sensei)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/AnandShah10/ShortcutSensei?style=social)](https://github.com/AnandShah10/ShortcutSensei/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/AnandShah10/ShortcutSensei)](https://github.com/AnandShah10/ShortcutSensei/issues)
+[![License](https://img.shields.io/github/license/AnandShah10/ShortcutSensei)](LICENSE)
 
 A local-first keyboard productivity coach for VS Code. It teaches you shortcuts for the commands you actually use, tracks how keyboard-driven your workflow is, suggests better keybindings, flags conflicting shortcuts, and turns repeated multi-step workflows into one-key macros.
 
