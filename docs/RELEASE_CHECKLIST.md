@@ -10,7 +10,7 @@ This codebase was developed in a sandboxed environment without npm registry acce
 - [ ] `npm run compile` — real `tsc` + `esbuild`, not the offline shim
 - [ ] `npm test` — real `vitest`, not the hand-rolled runner
 - [ ] `npm run lint` — hasn't been run at all yet; expect some findings on first run
-- [ ] Fix `package.json`'s placeholder `"publisher": "your-publisher-id"` — this must be a real, registered Marketplace publisher id or `vsce package` will fail
+- [ ] Fix `package.json`'s placeholder `"publisher": "AnandShah"` — this must be a real, registered Marketplace publisher id or `vsce package` will fail
 
 ## Manual smoke test in a real Extension Development Host
 

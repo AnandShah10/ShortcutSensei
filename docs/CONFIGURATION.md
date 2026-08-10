@@ -1,6 +1,6 @@
 # Configuration Guide
 
-All settings live under the `shortcutSensei.*` namespace. Search `@ext:your-publisher-id.shortcut-sensei` in VS Code's Settings UI, or edit `settings.json` directly.
+All settings live under the `shortcutSensei.*` namespace. Search `@ext:AnandShah.ShortcutSensei` in VS Code's Settings UI, or edit `settings.json` directly.
 
 ## Master toggles
 

@@ -8,7 +8,7 @@ A local-first keyboard productivity coach for VS Code. It teaches you shortcuts 
 
 **100% local. No telemetry. Nothing ever leaves your machine.** See [Privacy](#privacy).
 
-> **Note:** the badges above will render once this extension is actually published to the Marketplace under the `AnandShah.shortcut-sensei` id — until then they'll show as "unknown"/broken. No action needed; they'll resolve automatically on first publish.
+> **Note:** the badges above will render once this extension is actually published to the Marketplace under the `AnandShah.ShortcutSensei` id — until then they'll show as "unknown"/broken. No action needed; they'll resolve automatically on first publish.
 
 ## Install
 
@@ -19,10 +19,10 @@ A local-first keyboard productivity coach for VS Code. It teaches you shortcuts 
 Or from the command line:
 
 ```bash
-code --install-extension AnandShah.shortcut-sensei
+code --install-extension AnandShah.ShortcutSensei
 ```
 
-Or install directly from the [Marketplace listing](https://marketplace.visualstudio.com/items?itemName=AnandShah.shortcut-sensei).
+Or install directly from the [Marketplace listing](https://marketplace.visualstudio.com/items?itemName=AnandShah.ShortcutSensei).
 
 ## Why this extension is scoped the way it is
 
