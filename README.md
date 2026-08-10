@@ -1,8 +1,28 @@
 # Shortcut Sensei
 
+[![Stars](https://img.shields.io/github/stars/AnandShah10/shortcut-sensei?style=social)](https://github.com/AnandShah10/shortcut-sensei/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/AnandShah10/shortcut-sensei)](https://github.com/AnandShah10/shortcut-sensei/issues)
+[![License](https://img.shields.io/github/license/AnandShah10/shortcut-sensei)](LICENSE)
+
 A local-first keyboard productivity coach for VS Code. It teaches you shortcuts for the commands you actually use, tracks how keyboard-driven your workflow is, suggests better keybindings, flags conflicting shortcuts, and turns repeated multi-step workflows into one-key macros.
 
-Everything runs locally. Nothing is ever sent off your machine — see [Privacy](#privacy).
+**100% local. No telemetry. Nothing ever leaves your machine.** See [Privacy](#privacy).
+
+> **Note:** the badges above will render once this extension is actually published to the Marketplace under the `AnandShah.shortcut-sensei` id — until then they'll show as "unknown"/broken. No action needed; they'll resolve automatically on first publish.
+
+## Install
+
+1. Open the **Extensions** view in VS Code (`Ctrl+Shift+X` / `Cmd+Shift+X`).
+2. Search for **Shortcut Sensei**.
+3. Click **Install**.
+
+Or from the command line:
+
+```bash
+code --install-extension AnandShah.shortcut-sensei
+```
+
+Or install directly from the [Marketplace listing](https://marketplace.visualstudio.com/items?itemName=AnandShah.shortcut-sensei).
 
 ## Why this extension is scoped the way it is
 
@@ -75,17 +95,25 @@ See [`docs/CONFIGURATION.md`](docs/CONFIGURATION.md) for the full reference with
 ## Privacy
 
 - All data — usage stats, detected sequences, macros, coach suggestion history — is stored locally via VS Code's extension storage. Nothing is ever transmitted anywhere.
-- There is no telemetry. `src/telemetry/NullTelemetry.ts` exists specifically to make that guarantee auditable in code, not just in prose.
+- There is no telemetry. [`src/telemetry/NullTelemetry.ts`](src/telemetry/NullTelemetry.ts) exists specifically to make that guarantee auditable in code, not just in prose.
 - Export/Import/Reset are available any time from the Command Palette, and the data model is documented in [`src/types/storage-schema.ts`](src/types/storage-schema.ts) if you want to inspect exactly what's kept.
 
 ## Architecture
 
 See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for the module layout, data flow, and the rationale behind the shadow-command approach.
 
-## Development
+## Contributing
 
-See [`CONTRIBUTING.md`](CONTRIBUTING.md) for build/test instructions and coding conventions.
+Issues and pull requests are welcome. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for build/test instructions and coding conventions.
+
+## Release Notes
+
+See [`CHANGELOG.md`](CHANGELOG.md) for the full version history.
 
 ## License
 
 Not yet decided — add a `LICENSE` file before publishing.
+
+---
+
+<p align="center">Made with ❤️ by <strong>Anand Shah</strong> for the developer community.</p>
