@@ -1,0 +1,382 @@
+{
+  "name": "shortcut-sensei",
+  "displayName": "Shortcut Sensei",
+  "description": "A local-first keyboard productivity coach: learn shortcuts naturally, optimize keybindings, detect conflicts, and automate repeated workflows.",
+  "version": "0.1.0",
+  "publisher": "AnandShah",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnandShah10/ShortcutSensei.git"
+  },
+  "icon":"resources/icon.png",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other",
+    "Keymaps"
+  ],
+  "keywords": [
+    "shortcuts",
+    "keybindings",
+    "productivity",
+    "keyboard",
+    "macros"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "shortcutSensei.showProductivityReport",
+        "title": "Show Productivity Report",
+        "category": "Shortcut Sensei"
+      },
+      {
+        "command": "shortcutSensei.showShortcutStatistics",
+        "title": "Show Shortcut Statistics",
+        "category": "Shortcut Sensei"
+      },
+      {
+        "command": "shortcutSensei.optimizeShortcuts",
+        "title": "Optimize My Shortcuts",
+        "category": "Shortcut Sensei"
+      },
+      {
+        "command": "shortcutSensei.manageMacros",
+        "title": "Manage Macros",
+        "category": "Shortcut Sensei"
+      },
+      {
+        "command": "shortcutSensei.createMacro",
+        "title": "Create Macro",
+        "category": "Shortcut Sensei"
+      },
+      {
+        "command": "shortcutSensei.openConflictVisualizer",
+        "title": "Open Conflict Visualizer",
+        "category": "Shortcut Sensei"
+      },
+      {
+        "command": "shortcutSensei.toggleShortcutCoach",
+        "title": "Toggle Shortcut Coach",
+        "category": "Shortcut Sensei"
+      },
+      {
+        "command": "shortcutSensei.toggleAntiMouseMode",
+        "title": "Toggle Anti-Mouse Mode",
+        "category": "Shortcut Sensei"
+      },
+      {
+        "command": "shortcutSensei.exportAnalytics",
+        "title": "Export Analytics",
+        "category": "Shortcut Sensei"
+      },
+      {
+        "command": "shortcutSensei.importAnalytics",
+        "title": "Import Analytics",
+        "category": "Shortcut Sensei"
+      },
+      {
+        "command": "shortcutSensei.resetAnalytics",
+        "title": "Reset Analytics",
+        "category": "Shortcut Sensei"
+      },
+      {
+        "command": "shortcutSensei.shadow.formatDocument",
+        "title": "Format Document",
+        "category": "Shortcut Sensei"
+      },
+      {
+        "command": "shortcutSensei.shadow.rename",
+        "title": "Rename Symbol",
+        "category": "Shortcut Sensei"
+      },
+      {
+        "command": "shortcutSensei.shadow.saveFile",
+        "title": "Save",
+        "category": "Shortcut Sensei"
+      },
+      {
+        "command": "shortcutSensei.shadow.saveAll",
+        "title": "Save All",
+        "category": "Shortcut Sensei"
+      },
+      {
+        "command": "shortcutSensei.shadow.revealDefinition",
+        "title": "Go to Definition",
+        "category": "Shortcut Sensei"
+      },
+      {
+        "command": "shortcutSensei.shadow.peekDefinition",
+        "title": "Peek Definition",
+        "category": "Shortcut Sensei"
+      },
+      {
+        "command": "shortcutSensei.shadow.findReferences",
+        "title": "Find All References",
+        "category": "Shortcut Sensei"
+      },
+      {
+        "command": "shortcutSensei.shadow.quickFix",
+        "title": "Quick Fix...",
+        "category": "Shortcut Sensei"
+      },
+      {
+        "command": "shortcutSensei.shadow.commentLine",
+        "title": "Toggle Line Comment",
+        "category": "Shortcut Sensei"
+      },
+      {
+        "command": "shortcutSensei.shadow.deleteLines",
+        "title": "Delete Line",
+        "category": "Shortcut Sensei"
+      },
+      {
+        "command": "shortcutSensei.resolveConflict",
+        "title": "Resolve Conflict",
+        "category": "Shortcut Sensei"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "shortcutSensei.shadow.formatDocument",
+          "when": "editorTextFocus",
+          "group": "1_modification"
+        },
+        {
+          "command": "shortcutSensei.shadow.rename",
+          "when": "editorHasRenameProvider",
+          "group": "1_modification"
+        },
+        {
+          "command": "shortcutSensei.shadow.revealDefinition",
+          "when": "editorHasDefinitionProvider",
+          "group": "navigation"
+        },
+        {
+          "command": "shortcutSensei.shadow.peekDefinition",
+          "when": "editorHasDefinitionProvider",
+          "group": "navigation"
+        },
+        {
+          "command": "shortcutSensei.shadow.findReferences",
+          "when": "editorHasReferenceProvider",
+          "group": "navigation"
+        },
+        {
+          "command": "shortcutSensei.shadow.quickFix",
+          "when": "editorHasCodeActionsProvider",
+          "group": "1_modification"
+        },
+        {
+          "command": "shortcutSensei.shadow.commentLine",
+          "when": "editorTextFocus",
+          "group": "1_modification"
+        },
+        {
+          "command": "shortcutSensei.shadow.deleteLines",
+          "when": "editorTextFocus",
+          "group": "1_modification"
+        }
+      ],
+      "editor/title": [
+        {
+          "command": "shortcutSensei.shadow.saveFile",
+          "when": "editorIsOpen",
+          "group": "navigation"
+        },
+        {
+          "command": "shortcutSensei.shadow.saveAll",
+          "when": "editorIsOpen",
+          "group": "navigation"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "shortcutSensei.resolveConflict",
+          "when": "view == shortcutSensei.conflicts && viewItem == shortcutSensei.conflictContributor"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "key": "ctrl+space g",
+        "command": "shortcutSensei.leaderKey.git",
+        "when": "shortcutSensei.leaderKeyEnabled"
+      },
+      {
+        "key": "ctrl+space d",
+        "command": "shortcutSensei.leaderKey.debug",
+        "when": "shortcutSensei.leaderKeyEnabled"
+      },
+      {
+        "key": "ctrl+space t",
+        "command": "shortcutSensei.leaderKey.testing",
+        "when": "shortcutSensei.leaderKeyEnabled"
+      },
+      {
+        "key": "ctrl+space e",
+        "command": "shortcutSensei.leaderKey.explorer",
+        "when": "shortcutSensei.leaderKeyEnabled"
+      },
+      {
+        "key": "ctrl+space x",
+        "command": "shortcutSensei.leaderKey.extensions",
+        "when": "shortcutSensei.leaderKeyEnabled"
+      },
+      {
+        "key": "ctrl+space r",
+        "command": "shortcutSensei.leaderKey.refactor",
+        "when": "shortcutSensei.leaderKeyEnabled && editorTextFocus"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "shortcutSensei",
+          "title": "Shortcut Sensei",
+          "icon": "resources/activity-bar-icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "shortcutSensei": [
+        {
+          "id": "shortcutSensei.productivity",
+          "name": "Productivity",
+          "icon": "resources/productivity-icon.svg"
+        },
+        {
+          "id": "shortcutSensei.shortcutCoach",
+          "name": "Shortcut Coach",
+          "icon": "resources/coach-icon.svg"
+        },
+        {
+          "id": "shortcutSensei.optimizer",
+          "name": "Optimizer",
+          "icon": "resources/optimizer-icon.svg"
+        },
+        {
+          "id": "shortcutSensei.conflicts",
+          "name": "Conflicts",
+          "icon": "resources/conflict-icon.svg"
+        },
+        {
+          "id": "shortcutSensei.macros",
+          "name": "Macros",
+          "icon": "resources/macros-icon.svg"
+        },
+        {
+          "id": "shortcutSensei.analytics",
+          "name": "Analytics",
+          "icon": "resources/analytics-icon.svg"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Shortcut Sensei",
+      "properties": {
+        "shortcutSensei.productivity.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Master toggle for all Shortcut Sensei features."
+        },
+        "shortcutSensei.analytics.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable local usage analytics (never sent externally)."
+        },
+        "shortcutSensei.coach.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show subtle notifications teaching keyboard shortcuts for mouse-driven commands."
+        },
+        "shortcutSensei.coach.cooldownMinutes": {
+          "type": "number",
+          "default": 20,
+          "minimum": 1,
+          "description": "Minimum minutes between two suggestions for the same command."
+        },
+        "shortcutSensei.coach.maxSuggestionsPerHour": {
+          "type": "number",
+          "default": 3,
+          "minimum": 0,
+          "description": "Maximum number of coach notifications shown per hour."
+        },
+        "shortcutSensei.coach.notificationStyle": {
+          "type": "string",
+          "enum": [
+            "toast",
+            "statusBar",
+            "silent"
+          ],
+          "default": "toast",
+          "description": "How coach suggestions are presented."
+        },
+        "shortcutSensei.optimizer.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable the personal shortcut optimizer."
+        },
+        "shortcutSensei.optimizer.minimumUsage": {
+          "type": "number",
+          "default": 25,
+          "minimum": 1,
+          "description": "Minimum number of executions before a command is considered for optimization."
+        },
+        "shortcutSensei.macros.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable automatic macro detection."
+        },
+        "shortcutSensei.macros.minimumRepetitions": {
+          "type": "number",
+          "default": 5,
+          "minimum": 2,
+          "description": "Minimum number of times a sequence must repeat before a macro is suggested."
+        },
+        "shortcutSensei.leaderKey.enabled": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable experimental temporary workflow layers (leader key)."
+        },
+        "shortcutSensei.leaderKey.key": {
+          "type": "string",
+          "default": "ctrl+space",
+          "description": "Key combination that activates the leader-key menu."
+        },
+        "shortcutSensei.reports.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable daily/weekly/monthly productivity reports."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc --noEmit && node esbuild.js",
+    "watch": "node esbuild.js --watch",
+    "package": "node esbuild.js --production",
+    "lint": "eslint src --ext ts",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "vscode:prepublish": "npm run package"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/vscode": "^1.90.0",
+    "@typescript-eslint/eslint-plugin": "^7.16.0",
+    "@typescript-eslint/parser": "^7.16.0",
+    "@vscode/vsce": "^3.9.2",
+    "esbuild": "^0.28.1",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.2",
+    "typescript": "^5.5.3",
+    "vitest": "^4.1.10"
+  }
+}
