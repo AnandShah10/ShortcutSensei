@@ -2,7 +2,7 @@
   "name": "ShortcutSensei",
   "displayName": "Shortcut Sensei Pro",
   "description": "A local-first keyboard productivity coach: learn shortcuts naturally, optimize keybindings, detect conflicts, and automate repeated workflows.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "AnandShah",
   "repository": {
     "type": "git",

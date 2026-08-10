@@ -4,7 +4,9 @@ All notable changes to Shortcut Sensei are documented here.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project uses [Semantic Versioning](https://semver.org/) once it reaches 1.0.0. Before then, minor versions may include breaking changes to settings or stored-data shape (with a migration where one is needed — see `src/storage/SchemaMigrator.ts`).
 
-## [Unreleased]
+## [0.1.1] - Icon
+
+Icon updated for larger size.
 
 Nothing yet.
 
